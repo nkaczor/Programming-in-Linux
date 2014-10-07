@@ -17,7 +17,6 @@ int CountCharactersInLines(int file, int *charInLines)
 	lseek(file, (off_t) - 1 , SEEK_END);
 	while (i >= 0 && read(file, &c, 1) > 0)
 	{
-		printf("%c", c);
 		count++;
 		if (c == '\n')
 		{
